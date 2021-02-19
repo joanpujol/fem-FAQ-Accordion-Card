@@ -10,24 +10,17 @@
           href="https://fonts.googleapis.com/css?family=Kumbh+Sans">
 
     <link rel="stylesheet" href="./css/style.css">
-
     <title>Frontend Mentor | FAQ Accordion Card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
 </head>
 <body>
 <div class="accordion-faq">
     <div class="accordion-faq__illustration">
+        <img class="accordion-faq__bg-img" src="./images/illustration-woman-online-mobile.svg" alt="">
+        <img class="accordion-faq__bg-shadow" src="./images/bg-pattern-mobile.svg" alt="">
+
+        <img class="accordion-faq__bg-img-desktop" src="./images/illustration-woman-online-desktop.svg" alt="">
+        <img class="accordion-faq__bg-box-desktop" src="./images/illustration-box-desktop.svg" alt="">
+        <img class="accordion-faq__bg-shadow-desktop" src="./images/bg-pattern-desktop.svg" alt="">
     </div>
     <div class="accordion-faq__content">
         <h2 class="accordion-faq__title">FAQ</h2>
@@ -77,10 +70,13 @@
         </div>
     </div>
 </div>
-</div>
-<div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-</div>
 </body>
+<script>
+    const faqItems = [...document.querySelectorAll(".accordion-faq__item")];
+    faqItems.forEach(item => {
+        item.addEventListener("click", () => {
+            item.classList.toggle("active");
+        });
+    });
+</script>
 </html>
