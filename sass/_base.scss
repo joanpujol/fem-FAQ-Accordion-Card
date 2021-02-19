@@ -1,0 +1,35 @@
+// COLORS
+
+$active-blue: hsl(238, 29%, 16%);
+$soft-red: hsl(14, 88%, 65%);
+
+$neutral-dark-blue: hsl(237, 12%, 33%);
+$neutral-blue: hsl(240, 6%, 50%);
+
+$divider-color: hsl(240, 5%, 91%);
+
+// TYPOGRAPHY
+
+$font-size: 12px;
+$font-family: "Kumbh Sans";
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $neutral-blue;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: $font-size;
+  height: 100vh;
+  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}

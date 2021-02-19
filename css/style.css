@@ -1,0 +1,72 @@
+:root {
+  box-sizing: border-box; }
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #787887;
+  font-family: "Kumbh Sans";
+  font-weight: 400;
+  font-size: 12px;
+  height: 100vh;
+  background: linear-gradient(to bottom, #af67e9, #6565e7); }
+
+.accordion-faq {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  width: 90%;
+  padding: 0.75em 2.5em 3em;
+  margin: 0 auto;
+  border-radius: 5%; }
+  .accordion-faq__illustration {
+    position: relative;
+    margin-bottom: calc(196px / 2 + 1em); }
+    .accordion-faq__illustration::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 196px;
+      width: 100%;
+      background-image: url("../images/illustration-woman-online-mobile.svg");
+      background-repeat: no-repeat;
+      z-index: 1;
+      top: -10em; }
+  .accordion-faq__title {
+    color: #1d1e35;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1em; }
+  .accordion-faq__item.active .accordion-faq__question {
+    color: #1d1e35;
+    font-weight: 700; }
+  .accordion-faq__item.active .accordion-faq__answer {
+    display: block; }
+  .accordion-faq__item::after {
+    content: '';
+    display: block;
+    margin: 1.5em 0;
+    border-bottom: 1px solid #e7e7e9; }
+  .accordion-faq__question {
+    color: #4a4b5e;
+    margin-bottom: 1.5em;
+    position: relative; }
+    .accordion-faq__question::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: '';
+      display: block;
+      height: 1em;
+      width: 1em;
+      background-image: url("../images/icon-arrow-down.svg");
+      background-repeat: no-repeat; }
+  .accordion-faq__answer {
+    display: none; }
