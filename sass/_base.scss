@@ -33,3 +33,7 @@ body {
   font-size: $font-size;
   background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
+
+.downsize {
+  transform: scale(0.8);
+}
