@@ -112,7 +112,7 @@ body {
       position: absolute;
       left: -90px;
       top: 160px;
-      z-index: 2; }
+      z-index: 3; }
     .accordion-faq__bg-shadow-desktop {
       display: block;
       position: absolute;
